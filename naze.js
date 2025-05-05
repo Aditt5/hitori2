@@ -1362,7 +1362,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			}
 			break
 			case 'tagadmin': {
-				m.reply(`@${a.id.split('@')[0]}`, { mentions: [me.sender] })
+				m.reply(`@${m.sender.split('@')[0]}`, { mentions: [me.sender] })
 			}
 			break
 			case 'runtime': case 'tes': case 'bot': {
